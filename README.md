@@ -13,3 +13,7 @@
       
 4. Once you're done, try out other things that media queries can do:
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+# Acknowledgements
+
+Images from https://pixabay.com/
