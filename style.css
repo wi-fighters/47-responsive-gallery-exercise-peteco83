@@ -31,7 +31,7 @@ li {
 }
 
 h1 {
-  display: inline-block; /* hint */
+  display: inline-block;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   border-bottom: 4px solid #f4d143;
