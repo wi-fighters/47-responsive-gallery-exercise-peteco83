@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     width: 100%;
-    background-color: #38592E;
+    background: linear-gradient(-45deg, green, #36552C);
     border-bottom: 2px solid white;
 }
 
@@ -32,7 +32,7 @@ h1 span {
 header img {
     width: 70px;
     height: auto; 
-    position: relative;   
+    /* position: relative;    */
 }
 
 .noticias img {
@@ -45,11 +45,6 @@ header img {
 section {
     display: flex;
     flex-direction: column;
-}
-
-div {
-    
-    
 }
 
 .juegos {
@@ -89,10 +84,38 @@ section p {
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 638px) {
+@media screen and (min-width: 800px) {
+    body {
+        margin: 0 110px;
+        background-color: white;
+    }
+
+    header img {
+        width: 90px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+ 
     section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 50px;
+        background-color: #DFDFDF;
+    }
+
+    .container {
+        flex-basis: 40%;
+        
+    }
+
+    .noticias img {
+        width: 100%;
+        height: auto;
+        
     }
 }
