@@ -21,7 +21,7 @@ li {
 
 .container {
   /* ??? */
-  margin: auto 0;
+  margin: 0 auto;
   max-width: 1600px; /* 4 x image */
 }
 
@@ -42,17 +42,10 @@ h1 {
 
 /* Gallery */
 
-/*
-??? {
-  ???
-  ???
-}
-*/
-
-.gallery {
+.gallery ul {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* Keep image proportions on resize */
@@ -68,15 +61,15 @@ change the layout of the gallery to show 2 columns
 */
 @media screen and (min-width: 400px) {
 
-  ul {
+  /* ul {
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     
-  }
+  } */
 
   li {
     /* ??? */
-    flex-shrink: 1
+    flex-basis: 50%;
   }
 }
 
@@ -84,9 +77,9 @@ change the layout of the gallery to show 2 columns
 When there's room for more than 2 columns,
 change the layout of the gallery to show 3 columns
 */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   li {
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
   }
 }
 
@@ -96,3 +89,9 @@ change the layout of the gallery to show 4 columns
 */
 
 /* ??? Write your own. You got this :) */
+
+@media screen and (min-width: 800px) {
+  li {
+    flex-basis: 25%;
+  }
+}
