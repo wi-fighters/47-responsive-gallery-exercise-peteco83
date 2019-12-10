@@ -21,7 +21,7 @@ li {
 
 .container {
   /* ??? */
-  
+  margin: auto 0;
   max-width: 1600px; /* 4 x image */
 }
 
@@ -49,10 +49,10 @@ h1 {
 }
 */
 
-.gallery ul {
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 1;
+  flex-direction: column;
 }
 
 /* Keep image proportions on resize */
@@ -69,8 +69,8 @@ change the layout of the gallery to show 2 columns
 @media screen and (min-width: 400px) {
 
   ul {
-    /* ??? */
-    /* ??? */
+    flex-wrap: wrap;
+    flex-direction: column;
     
   }
 
