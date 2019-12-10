@@ -14,12 +14,14 @@ html {
 
 li {
   /* ??? */
+  list-style: none;
 }
 
 /* Layout */
 
 .container {
   /* ??? */
+  
   max-width: 1600px; /* 4 x image */
 }
 
@@ -47,6 +49,12 @@ h1 {
 }
 */
 
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
 /* Keep image proportions on resize */
 img {
   max-width: 100%;
@@ -63,10 +71,12 @@ change the layout of the gallery to show 2 columns
   ul {
     /* ??? */
     /* ??? */
+    
   }
 
   li {
     /* ??? */
+    flex-shrink: 1
   }
 }
 
@@ -74,7 +84,7 @@ change the layout of the gallery to show 2 columns
 When there's room for more than 2 columns,
 change the layout of the gallery to show 3 columns
 */
-@media screen and (min-width: /* ??? */) {
+@media screen and (min-width: 1200px) {
   li {
     width: calc(100% / 3);
   }
